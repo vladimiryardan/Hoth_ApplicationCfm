@@ -1,2 +1,2 @@
 # Hoth_ApplicationCfm
-Adding Hoth 
+Implementing Hoth in Application.cfm 
