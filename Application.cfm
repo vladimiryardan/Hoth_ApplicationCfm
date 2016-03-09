@@ -47,12 +47,6 @@
 --->
 
 
-<!---<cferror
-template = "hoth_error.cfm"
-type = "exception" 
-exception = "any"  
-<!---mailTo = "e-mail address"--->
->--->
 
 
 
