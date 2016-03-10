@@ -8,8 +8,11 @@
 	// Original Info -----------------------------------------------------------
 	Author			: Aaron Greenlee
 	Created      	: 10/01/2010
-
+	
+	Filepath: 
+	
 	Default configuration for Hoth.
+	
 
 */
 component
@@ -69,10 +72,11 @@ component
 	**/
 
 
+
 		//:vladedit: immportant in displaying to the browser
 		property
 		name='HothReportURL' 
-		default='http://localhost:8500/local/hothApplication_cfm/Hoth/Report.cfc';
+		default='http://ford.autorevolution.net/Hoth_ApplicationCfm/hoth/report.cfc';
 		
 		
 

@@ -128,7 +128,7 @@
 		var Hoth = {
 			Exceptions : {}
 		};
-		console.log(HOTH_REPORT_URI)
+		
 		$.ajax({
 			url: HOTH_REPORT_URI + '?method=report&exception=all',
 			cache: false,
@@ -138,8 +138,6 @@
 			},
 			error: function(e){
 				alert('error getting reports' );
-				//console.log(e)
-				//console.log($(this).url )
 			}
 		});
 
@@ -168,8 +166,7 @@
 			// Sort all of our exceptions by first date observed
 			Hoth.ExceptionsByVolume.sort(compareDt);
 			
-			//console.log(Hoth.ExceptionsByVolume.sort(compareDt))
-			
+					
 			
 			// Print the HTML links
 			var exLinksHTML = '';
@@ -179,7 +176,7 @@
 				
 				var ex = Hoth.ExceptionsByVolume[i];				
 				convertKeysToLowercase(ex);
-				console.log(ex.dt + "_" + ex.filename)
+				
 				
 				//link naming for easier visibility and readability
 				var linkName = "Autorevolution";
@@ -294,12 +291,7 @@
 		function compareDt(a,b){
 			
 			convertKeysToLowercase(a); convertKeysToLowercase(b);			
-			//if (new Date(a.dt).getTime() > new Date(b.dt).getTime())
-			//console.log(a.dt)
-			//console.log(b.dt)
-			//console.log( new Date(a.dt).getTime() )
-			//console.log( new Date(b.dt).getTime() )
-			//console.log(Date.parse(a.dt) > Date.parse ( b.dt ))
+
 			if(new Date(a.dt) > new Date ( b.dt ) )
 			{ return 1; }
 
@@ -307,9 +299,7 @@
 			{ return -1; }
 
 			return 0;
-						
-			//return (new Date("February, 24 2016 17:48:51").getTime() > new Date("February, 24 2016 17:48:50").getTime() );
-			 0;
+
 		}
 	});
 	</script>
