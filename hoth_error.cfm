@@ -12,7 +12,7 @@
 	
 	// anything you need here...
 	writeOutput('
-	<a href="/hoth/report.cfc?method=index">Report</a>
+	<a href="/Hoth_ApplicationCfm/hoth/report.cfc?method=index">Report</a>
 	<h3>Forced Error</h3>
 	');
 	
