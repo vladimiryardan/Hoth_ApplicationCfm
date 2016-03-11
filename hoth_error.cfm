@@ -11,7 +11,10 @@
 <cfscript>
 	
 	// anything you need here...
-	writeOutput('<h3>Forced Error</h3>');
+	writeOutput('
+	<a href="/hoth/report.cfc?method=index">Report</a>
+	<h3>Forced Error</h3>
+	');
 	
 </cfscript>
 
